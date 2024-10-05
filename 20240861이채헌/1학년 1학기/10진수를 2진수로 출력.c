@@ -1,14 +1,14 @@
-////10Áø¼ö¸¦ 2Áø¼ö·Î Ãâ·ÂÇÏ±â
+////10ì§„ìˆ˜ë¥¼ 2ì§„ìˆ˜ë¡œ ì¶œë ¥í•˜ê¸°
 //#include <stdio.h>
 //
 //int main()
 //{
 //	unsigned int num;
-//	printf("½ÊÁø¼ö:");
+//	printf("ì‹­ì§„ìˆ˜:");
 //	scanf("%u", &num);
 //
 //	unsigned int mask = 1 << 7;
-//	printf("ÀÌÁø¼ö:");
+//	printf("ì´ì§„ìˆ˜:");
 //
 //	((mask & num) == 0) ? printf("0") : printf("1");
 //	mask = mask >> 1;
