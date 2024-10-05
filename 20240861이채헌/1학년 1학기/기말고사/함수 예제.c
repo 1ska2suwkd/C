@@ -6,7 +6,7 @@
 //int main() {
 //	int a;
 //	scanf("%d", &a);
-//	printf("%d!ÀÇ °ªÀº %dÀÔ´Ï´Ù.\n", a, factorial(a));
+//	printf("%d!Ã€Ã‡ Â°ÂªÃ€Âº %dÃ€Ã”Â´ÃÂ´Ã™.\n", a, factorial(a));
 //}
 //
 //int MAX(int x, int y) {
