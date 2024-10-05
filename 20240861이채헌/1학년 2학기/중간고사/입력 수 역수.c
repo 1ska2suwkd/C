@@ -3,7 +3,7 @@
 //int main() {
 //	int a[SIZE];
 //	for (int i = 0; i < SIZE; i++) {
-//		printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À:");
+//		printf("ÃÂ¤Â¼Ã¶Â¸Â¦ Ã€Ã”Â·Ã‚Ã‡ÃÂ½ÃƒÂ¿Ã€:");
 //		scanf("%d", &a[i]);
 //	}
 //	for (int i = 4; i >= 0; i--) {

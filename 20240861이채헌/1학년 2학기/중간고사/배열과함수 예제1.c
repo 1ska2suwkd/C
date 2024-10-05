@@ -7,7 +7,7 @@
 //	int grade[students] = { 1 ,2 ,3 ,4 ,5 };
 //
 //	avg = get_average(grade, students);
-//	printf("����� %d�Դϴ�.", avg);
+//	printf("Æò±ÕÀº %dÀÔ´Ï´Ù.", avg);
 //	return 0;
 //}
 //

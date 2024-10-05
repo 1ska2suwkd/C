@@ -1,4 +1,4 @@
-////xorÀ» ÀÌ¿ëÇÑ ¾ÏÈ£È­
+////xorì„ ì´ìš©í•œ ì•”í˜¸í™”
 //#include <stdio.h>
 //
 //int main()
@@ -10,11 +10,11 @@
 //
 //	en_data = data ^ key;
 //
-//	printf("¾ÏÈ£È­µÈ ¹®ÀÚ=%c \n", en_data);
+//	printf("ì•”í˜¸í™”ëœ ë¬¸ì=%c \n", en_data);
 //	
 //	char orig_data;
 //	orig_data = en_data ^ key;
-//	printf("¿ø·¡ÀÇ µ¥ÀÌÅÍ=%c\n", orig_data);
+//	printf("ì›ë˜ì˜ ë°ì´í„°=%c\n", orig_data);
 //	
 //	return 0;
 //
