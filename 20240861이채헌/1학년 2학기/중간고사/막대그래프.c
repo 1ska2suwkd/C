@@ -5,7 +5,7 @@
 //	int i, s;
 //
 //	for (i = 0; i < STUDENTS; i++) {
-//		printf("��ȣ %d: ", i);
+//		printf("¹øÈ£ %d: ", i);
 //		for (s = 0; s < grade[i]; s++)
 //			printf("*");
 //		printf("\n");
