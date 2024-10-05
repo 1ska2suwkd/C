@@ -1,4 +1,4 @@
-////±âÈ£»ó¼ö¸¦ ÀÌ¿ëÇÑ ¿¬ºÀ°ú ¼¼±İ °è»ê
+////ê¸°í˜¸ìƒìˆ˜ë¥¼ ì´ìš©í•œ ì—°ë´‰ê³¼ ì„¸ê¸ˆ ê³„ì‚°
 //#include <stdio.h>
 //#define TAX_RATE 0.2
 //
@@ -6,14 +6,14 @@
 //{
 //	const int MONTHS = 12;
 //	int m_salary, y_salary, tax;
-//	printf("¿ù±ŞÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
+//	printf("ì›”ê¸‰ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
 //	scanf("%d", &m_salary);
 //
 //	y_salary = m_salary * MONTHS;
 //	tax = y_salary * TAX_RATE;
 //
-//	printf("¿¬ºÀÀº %dÀÔ´Ï´Ù.\n", y_salary);
-//	printf("¼¼±İÀº %dÀÔ´Ï´Ù", tax);
+//	printf("ì—°ë´‰ì€ %dì…ë‹ˆë‹¤.\n", y_salary);
+//	printf("ì„¸ê¸ˆì€ %dì…ë‹ˆë‹¤", tax);
 //
 //	return 0;
 //}
