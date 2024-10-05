@@ -1,6 +1,7 @@
 //#include <stdio.h>
 //#define SIZE 10
 //int main() {
+// 
 //	char ans1;
 //	int ans2;
 //	int seats[SIZE] = {0};
