@@ -8,6 +8,7 @@ int main() {
 	printf("&a[2] = %u\n", &a[2]);
 
 	printf("a = %u\n", a); // 이 부분이 교수님이 강조하시는 배열의 이름 == 주소값
+	//&a[0] = a
 
 	return 0;
 }
