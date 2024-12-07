@@ -3,7 +3,7 @@
 #define QUESTION 21
 
 int comparision(char ans[], char a[]);
-void ps(char ans[][100], int wrong[], char problem[][100]);
+void ps(char ans[][100], int wrong[], char problem[][100], int pnumber);
 
 int main() {
     int i, j, choice = -1;
@@ -50,18 +50,26 @@ int main() {
         {"The most northern city on the map is Reykjavik, the capital of Iceland"}
     };
 
+    // 1. What is this a map of?
+    // 2. Where is France?
+    // 3. How many countries border Spain, and what are they?
+    // 4. What is the capital city of Germany?
+    // 5. Approximately, what is the distance between Paris and Madrid?
+    // 6. From Paris, where is Madrid?
+    // 7. What's the most northern city on the map?
+
     while (choice != 0) {
         printf("무엇을 학습하시겠습니까? (1:나라소개, 2:관용구, 3:지도, 0:종료): ");
         scanf("%d", &choice);
 
         if (choice == 1) {
-            ps(ans,wrong,korea);
+            ps(ans,wrong,korea,15);
         }
         else if (choice == 2) {
-            ps(ans, wrong,idioms);
+            ps(ans, wrong,idioms,10);
         }
         else if (choice == 3) {
-            ps(ans, wrong,map);
+            ps(ans, wrong,map,7);
         }
         else break;
     }
@@ -75,22 +83,22 @@ int comparision(char ans[], char a[]) {
         return -1; // 오답
 }
 
-void ps(char ans[][100],int wrong[],char problem[][100]) {
+void ps(char ans[][100],int wrong[],char problem[][100], int pnumber) {
     int i, j, choice = -1;
     int wrong_count = 0; // 틀린 문제 개수 초기화
 
 
 
-    for (i = 0; i < 15; i++) {
-        printf("%d: ", i + 1);
+    for (i = 0; i < pnumber; i++) {
+        printf("%d:\n", i + 1);
         scanf(" %[^\n]", ans[i]);
 
         if (comparision(ans[i], problem[i]) == -1) {
-            printf("오답\n");
+            printf("오답입니다. 정답:\n%s\n\n",problem[i]);
             wrong[wrong_count++] = i; // 틀린 문제 번호 저장
         }
         else {
-            printf("정답\n");
+            printf("정답입니다.\n\n");
         }
     }
 
@@ -100,26 +108,18 @@ void ps(char ans[][100],int wrong[],char problem[][100]) {
         int new_wrong_count = 0; // 새로운 틀린 문제 개수
         for (j = 0; j < wrong_count; j++) {
             i = wrong[j]; // 틀린 문제 인덱스
-            printf("%d: ", i + 1);
+            printf("%d:\n", i + 1);
             scanf(" %[^\n]", ans[i]);
 
             if (comparision(ans[i], problem[i]) == -1) {
-                printf("오답\n");
+                printf("오답입니다. 정답:\n%s\n\n", problem[i]);
                 wrong[new_wrong_count++] = i; // 아직 틀린 문제 저장
             }
             else {
-                printf("정답\n");
+                printf("정답입니다.\n\n");
             }
         }
         wrong_count = new_wrong_count; // 틀린 문제 개수 업데이트
     }
 }
 
-
-// 1. What is this a map of?
-// 2. Where is France?
-// 3. How many countries border Spain, and what are they?
-// 4. What is the capital city of Germany?
-// 5. Approximately, what is the distance between Paris and Madrid?
-// 6. From Paris, where is Madrid?
-// 7. What’s the most northern city on the map?
