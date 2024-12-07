@@ -17,16 +17,16 @@ int main() {
     {"The currency is the won"},                                            //3.화폐
     {"The national flower is the mugunghwa"},                               //4.꽃
     {"The national instrument is the gayageum"},                            //5.악기
-    {"The national anthem is Aegukga"},                                     //7.국가
-    {"Traditional food is kimchi"},                                         //8.음식
-    {"Traditional clothing is the hanbok"},                                 //9.옷
-    {"The population is about 51 million"},                                 //10.인구
-    {"The official language is Korean"},                                    //11.언어
-    {"Famous people are Faker and Son Heung-min"},                          //12.유명인
-    {"The colors on the flag are white, red, blue, and black"},             //13.국기 색
-    {"The president is Yoon Suk-yeol"},                                     //14.대통령
-    {"A popular tourist attraction is Jeju Island"},                        //15.관광지
-    {"The tallest mountain is Hallasan on Jeju Island"},                    //6.높은산
+    {"The national anthem is Aegukga"},                                     //6.국가
+    {"Traditional food is kimchi"},                                         //7.음식
+    {"Traditional clothing is the hanbok"},                                 //8.옷
+    {"The population is about 51 million"},                                 //9.인구
+    {"The official language is Korean"},                                    //10.언어
+    {"Famous people are Faker and Son Heung-min"},                          //11.유명인
+    {"The colors on the flag are white, red, blue, and black"},             //12.국기 색
+    {"The president is Yoon Suk-yeol"},                                     //13.대통령
+    {"A popular tourist attraction is Jeju Island"},                        //14.관광지
+    {"The tallest mountain is Hallasan on Jeju Island"},                    //15.높은산
     };
     char idioms[10][100] = {
         {"I feel blue when it rains"},
@@ -51,7 +51,7 @@ int main() {
     };
 
     while (choice != 0) {
-        printf("무엇을 학습하시겠습니까? (1:나라소개, 2:관용구, 3:자기소개, 0:종료): ");
+        printf("무엇을 학습하시겠습니까? (1:나라소개, 2:관용구, 3:지도, 0:종료): ");
         scanf("%d", &choice);
 
         if (choice == 1) {
