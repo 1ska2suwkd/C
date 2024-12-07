@@ -26,7 +26,7 @@ int main() {
     {"The colors on the flag are white, red, blue, and black"},             //13.국기 색
     {"The president is Yoon Suk-yeol"},                                     //14.대통령
     {"A popular tourist attraction is Jeju Island"},                        //15.관광지
-    {"The tallest mountain is Hallasan on Jeju Island."},                   //6.음악
+    {"The tallest mountain is Hallasan on Jeju Island"},                    //6.높은산
     };
     char idioms[10][100] = {
         {"I feel blue when it rains"},
