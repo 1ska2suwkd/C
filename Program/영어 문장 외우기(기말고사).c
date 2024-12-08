@@ -12,7 +12,7 @@ int main() {
     int wrong_count;     // 틀린 문제 개수
 
     char korea[15][100] = {
-    {"Korea is in southeast Asia"},
+    {"Korea is in east Asia"},
     {"The capital city is Seoul"},                                          //2.수도
     {"The currency is the won"},                                            //3.화폐
     {"The national flower is the mugunghwa"},                               //4.꽃
