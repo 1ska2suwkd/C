@@ -36,9 +36,9 @@ int main() {
         {"I call my friends now and then"},
         {"I always hit the books at home after school"},
         {"I can't stand the heat"},
-        {"I would like to do away with the habit of staying up late. because I can't wake up early"},
         {"I hit the ceiling because my friend lied to me"},
-        {"I saw red when my friend broke our plans"}
+        {"I saw red when my friend broke our plans"},
+        { "I'm mad about Python, I've been into it for 1 year" }
     };
     char map[7][100] = {
         {"This is a map of Europe"},
