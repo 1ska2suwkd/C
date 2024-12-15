@@ -4,13 +4,13 @@
 struct student {
 	int number;
 	char name[10];
-	double score;
+	float score;
 };
 
 int main() {
 	int count=0;
 	char fname[100];
-	double total = 0;
+	float total = 0.0;
 	struct student s;
 	FILE* fp = NULL;
 
@@ -26,9 +26,9 @@ int main() {
 		printf("학번, 이름, 성적을 입력하시오(음수이면 종료): ");
 		scanf("%d", &s.number);
 		if (s.number < 0) break;
-		scanf("%s %lf", s.name, &s.score);
+		scanf("%s %f", s.name, &s.score);
 
-		fprintf(fp, "%d %s %lf", s.number, s.name, s.score);
+		fprintf(fp, "%d %s %f\n", s.number, s.name, s.score);
 	}
 
 	fclose(fp);
@@ -39,12 +39,13 @@ int main() {
 	}
 
 	while (!feof(fp)) {
-		fscanf(fp, "%d %s %lf", &s.number, s.name, &s.score);
-		total += s.score;
-		count++;
+		if(fscanf(fp, "%d %s %f", &s.number, s.name, &s.score) == 3){
+			total += s.score;
+			count++;
+		}
 	}
 
-	printf("평균 = %lf", total / count);
+	printf("평균 = %f", total / count);
 	fclose(fp);
 
 	return 0;
